@@ -1,0 +1,555 @@
+/* navbar */
+.container{
+    max-width: 1143px;
+    margin: 0 auto;
+}
+
+.navbar{
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.logo{
+    height: 73px;
+}
+
+
+.navbar_menu{
+    width: 197px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar_a{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #433840;
+    text-decoration: none;
+}
+
+
+.navbar_a:hover{
+    color: #FEA3AC;
+}
+/* about */
+
+.about{
+    margin: 0 auto;
+    background: url(../img/about.jpg) center center no-repeat;
+    position: relative;
+    margin-top: 30px;
+    /* display: none; */
+}
+
+.about::before{
+    content: '' ;
+    background: url(../img/top.svg) center center no-repeat;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+}
+
+.about::after{
+    content: '' ;
+    background: url(../img/bottom.svg) center center no-repeat;
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.about_items{
+    padding-top: 150px;
+    padding-bottom: 135px;
+}
+
+.about_title{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+.about_subtitle{
+    font-family: 'Waiting for the Sunrise';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+/* smoothie */
+
+.smoothie{
+    margin-top: 70px;
+    /* display: none; */
+}
+
+.smoothie_block{
+    display: flex;
+    min-width: 1131px;
+    margin: 0 auto;
+}
+
+.smoothie_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.smoothie_item{
+    width: 332px;
+    height: 120px;
+}
+
+.smoothie_item h4{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #433840;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.smoothie_item p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+    color: #9A9A9A;
+    margin: 0;
+    text-align: justify;
+}
+
+.smoothie_img{
+    margin-top: 70px;
+    margin-left: 36px;
+    margin-right: 40px;
+    width: 380px;
+}
+/* fruit */
+
+.fruit{
+    background: url(../img/fruit.jpg) center center no-repeat;
+    position: relative;
+    margin-top: 60px;
+    display: none;
+}
+
+.fruit_block{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.fruit::before{
+    content: '' ;
+    background: url(../img/top.svg) center center no-repeat;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+}
+
+.fruit::after{
+    content: '' ;
+    background: url(../img/bottom.svg) center center no-repeat;
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+}
+
+.fruit_items{
+    padding-top: 188px;
+    padding-bottom: 190px;
+}
+
+
+.fruit_title{
+    margin: 0;
+    text-align: center;
+    font-family: 'Waiting for the Sunrise';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 99px;
+    color: #DFEEB6;
+}
+
+.fruit_subtitle{
+    margin: 0;
+    margin-bottom: px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.fruit_img{
+    width: 119px;
+    height: 119px;
+    margin-left: 30px;
+}
+
+/* team */
+
+.team{
+    display: none;
+}
+
+.team_items{
+    max-width: 1143px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.team_item{
+    display: flex;
+    width: calc(50% - 11px) ;
+    border-radius: 5px;
+}
+
+.team_img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.team_item:nth-child(1) .team_img, .team_item:nth-child(2) .team_img{
+    margin-left: -165px;
+    margin-right: 17px;
+}
+
+.team_item:nth-child(1), .team_item:nth-child(2){
+    margin-bottom: 40px;
+    width: calc(50% - 11px - 165px);
+    margin-left: 165px;
+}
+
+.team_item:nth-child(1), .team_item:nth-child(4){
+    background: #C9E3F4;
+}
+
+.team_item:nth-child(2), .team_item:nth-child(3){
+    background: #DFEEB6;
+}
+
+
+.team_item:nth-child(3) .team_img, .team_item:nth-child(4) .team_img{
+    
+    margin-right: -165px;
+    margin-left: 17px;
+}
+
+.team_item:nth-child(3), .team_item:nth-child(4){
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+    width: calc(50% - 11px - 165px);
+    margin-right: 165px;
+}
+
+.team_item:nth-child(3) .team_data, .team_item:nth-child(4) .team_data{
+    margin-left: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.team_item:nth-child(3) .team_data .team_data_text, .team_item:nth-child(4) .team_data .team_data_text{
+    text-align: right;
+}
+
+.team_data_title{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 74px;
+}
+
+.team_data_subtitle{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #433840;
+    margin: 0;
+}
+
+.team_data_text{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    color: #433840;
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 22px;
+}
+ 
+.team_title{
+    margin-top: 103px;
+    margin-bottom: 60px;
+}
+
+.team_title_h3{
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    /* identical to box height */
+    color: #433840;
+
+
+}
+
+.team_title_p{
+    margin: 0;
+    font-family: 'Waiting for the Sunrise';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    /* identical to box height */
+    color: #F7A1A8;
+}
+
+/* footer_info------------------------------ */
+.footer{
+    display: none;
+}
+
+.footer_info{
+    background: url(../img/footer_info.jpg) center center no-repeat;
+}
+
+.footer_info_items{
+    display: flex;
+    justify-content: space-between;
+    width: 1141px;
+}
+
+.footer_info_title{
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin-top: 62px;
+    margin-bottom: 25px;
+}
+
+.footer_info_span{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 175% */
+    color: #DFEEB6;
+}
+
+.footer_info_text{
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 175% */
+    color: #FFFFFF;
+    width: 243px;
+    margin-bottom: 60px;
+}
+
+/* 2 block-------------------------------- */
+
+.footer_info_contact{
+    width: 307px;
+    height: 157px;
+    margin-left: 171px;
+    margin-right: 77px;
+    
+}
+
+.footer_info_phone{
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 175% */
+    position: relative;
+    padding-left: 15px;
+    
+    
+    
+    color: #FFFFFF;
+    display: block;
+}
+
+.footer_info_email{
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 175% */
+    position: relative;
+    padding-left: 15px;
+    
+    
+    color: #FFFFFF;
+    display: block;
+}
+
+.footer_info_adress{
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 175% */
+    position: relative;
+    padding-left: 15px;
+    
+    text-decoration-line: underline;
+    
+    color: #FFFFFF;
+    display: block;
+    
+}
+
+.footer_info_phone::before{
+    content: '';
+    background: url(../img/phone.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+}
+
+.footer_info_email::before{
+    content: '';
+    background: url(../img/email.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+}
+
+.footer_info_adress::before{
+    content: '';
+    background: url(../img/adress.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+}
+
+
+/* 3 block--------------------------------- */
+
+.footer_info_icon{
+   width: 343px;
+   height: 220px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+   
+}
+
+.footer_info_img{
+    max-width: 97px;
+    height: 97px;
+}
+
+/* copy block------------------------- */
+
+.copy{
+    margin: 0;
+    background-color: #433840;
+    height: 60px;
+}
+
+.copy_info{
+    margin: 0 auto;
+    width: 1141px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy_img{
+    margin: 0;
+    width: 78px;
+    height: 15px;
+    padding-bottom: 18px;
+}
+
+.copy_p{
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 35px;
+    /* identical to box height, or 233% */
+    color: #FFFFFF;
+    padding-bottom: 18px;
+}
